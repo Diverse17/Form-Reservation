@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Форма бронирования переговорной</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <form action="#" method="post">
+            <label for="tower-select">Башня</label>
+            <select name="tower" id="tower-select" required>
+                <option value="" selected disabled>--Выберите башню--</option>
+            </select>
+
+            <label for="floor-select">Этаж</label>
+            <select name="floor" id="floor-select" required>
+                <option value="" selected disabled>--Выберите этаж--</option>
+            </select>
+
+            <label for="meeting-room-select">Номер переговорной</label>
+            <select name="meeting-room" id="meeting-room-select" required>
+                <option value="" selected disabled>--Выберите номер переговорной--</option>
+            </select>
+
+            <label for="date">Дата бронирования</label>
+            <input type="date" id="date" name="date" required>
+
+            <div class="time-container">
+                <div class="wrapper">
+                    <label for="time-start">Время бронирования</label>
+                    <input type="time" id="time-start" name="time-start" required>
+                </div>
+
+                <div class="wrapper">
+                    <label for="duration-select">Длительность</label>
+                    <select name="duration" id="duration-select" required>
+                        <option value="" selected disabled>--hh:mm--</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="comments">Комментарий</label>
+            <textarea name="comment" id="comments" rows="5" placeholder="Необязательно"></textarea>
+
+            <div class="button-container">
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </div>
+        </form>
+    </main>
+    <script src="./main.js" type="module"></script>
+</body>
+
+</html>
